@@ -32,6 +32,18 @@ public class FractionTest {
     }
 
     @Test
+    void should_sum_fraction_4_div_5_and_1_div_4() {
+        // Given
+        Fraction fraction = new Fraction(3, 5);
+
+        // When
+        Fraction fractionResult = fraction.add(new Fraction(1, 4));
+
+        // Then
+        assertEquals(new Fraction(17, 20), fractionResult);
+    }
+
+    @Test
     void should_reduce_3_div_6_to_1_div_2() {
         // Given
         Fraction fraction;
