@@ -1,6 +1,5 @@
 package com.arolla.fraction;
 
-import com.arolla.fraction.Fraction;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 /**

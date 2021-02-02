@@ -11,23 +11,17 @@ public class Fraction {
     private int div;
 
     public Fraction(int num, int div) {
-        if (num  == 3 && div == 6) {
-            this.num = 1;
-            this.div = 2;
-        } else if (num == 4 && div == 12) {
-            this.num = 1;
-            this.div = 3;
-        } else if (num == 5 && div == 20) {
-            this.num = 1;
-            this.div = 4;
-        } else {
-            this.num = num;
-            this.div = div;
-        }
+        int gcd = gcd(num, div);
+        this.num = num / gcd;
+        this.div = div / gcd;
     }
 
     public Fraction add(Fraction fraction) {
         return new Fraction(5, 6);
+    }
+
+    public int gcd(int num, int div) {
+        return div == 0 ? num : gcd (div, num % div) ;
     }
 
     @Override
