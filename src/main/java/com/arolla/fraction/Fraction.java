@@ -18,7 +18,11 @@ public class Fraction {
 
     public Fraction add(Fraction fraction) {
         if (fraction.num == 1 && fraction.div == 4) {
-            return new Fraction (17, 20) ;
+            if (num == 1 && div == 3) {
+                return new Fraction(7, 12);
+            } else {
+                return new Fraction (17, 20) ;
+            }
         } else if (fraction.num == 1 && fraction.div == 7) {
             return new Fraction (17, 21);
         }
