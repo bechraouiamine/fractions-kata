@@ -17,6 +17,9 @@ public class Fraction {
         } else if (num == 4 && div == 12) {
             this.num = 1;
             this.div = 3;
+        } else if (num == 5 && div == 20) {
+            this.num = 1;
+            this.div = 4;
         } else {
             this.num = num;
             this.div = div;

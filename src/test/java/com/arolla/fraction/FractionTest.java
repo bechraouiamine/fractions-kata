@@ -44,4 +44,16 @@ public class FractionTest {
         assertEquals(new Fraction(1, 3), fraction);
     }
 
+    @Test
+    void should_reduce_5_div_20_to_1_div_4() {
+        // Given
+        Fraction fraction;
+
+        // When
+        fraction = new Fraction(5, 20);
+
+        // Then
+        assertEquals(new Fraction(1, 4), fraction);
+    }
+
 }
